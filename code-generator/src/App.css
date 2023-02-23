@@ -1,6 +1,11 @@
  .App {
   text-align: center;
 }
+
+.App-title {
+  font-weight: 700;
+}
+
 /*
 .App-logo {
   height: 40vmin;

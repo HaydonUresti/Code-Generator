@@ -3,11 +3,35 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect, BrowserRouter,  createBrowserRouter,
+  RouterProvider, } from "react-router-dom";
+import HomePage from './pages/homePage';
+import EncryptPage from './pages/encryptPage';
+import DecryptPage from './pages/decryptPage';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage/>,
+  },
+  {
+    path: "encrypt",
+    element: <EncryptPage/>,
+  },
+  {
+    path: "decrypt",
+    element: <DecryptPage/>,
+  }
+]);
+
+
 root.render(
   <React.StrictMode>
-    <App />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 
