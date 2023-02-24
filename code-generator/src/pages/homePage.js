@@ -32,7 +32,7 @@ const HomePage = () => {
             </a>
           </header> */}
           <body className='App-body'>
-            <p>This is the</p>
+            <p>This is the home page</p>
             <p>This is the</p>
           </body>
           <footer className='App-footer'>
