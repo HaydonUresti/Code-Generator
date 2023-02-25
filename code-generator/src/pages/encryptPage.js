@@ -1,12 +1,17 @@
 import React from "react";
-import encryptString from  '../components/cypher'
+// import encryptString from  '../components/cypher'
+// import { exportItems } from "../components/cypher";
 import { useState } from "react";
-
+// import encryptString from "../components/cypher";
+import encryptString from "../components/cypher";
 // The home page of the website
 const EncryptPage = () => {
 
   const [code, setCode] = useState("");
- 
+  // let encodedString = exportItems.encryptString(code)
+  // let encodedString = encryptString(code)
+  let outputCode = ''
+
   return (
         <div className="App">
           
@@ -29,6 +34,10 @@ const EncryptPage = () => {
               </label>
               <input type="submit" />
             </form>
+           <button onClick={encryptString(code)}>
+            Encrypt your message
+           </button>
+           <p>{outputCode}</p>
           </body>
           <footer className='App-footer'>
             <p>2023 Code Generator - Haydon Uresti</p>
