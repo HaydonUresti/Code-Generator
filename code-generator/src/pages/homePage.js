@@ -33,7 +33,7 @@ const HomePage = () => {
           </header> */}
           <body className='App-body'>
             <p>This is the home page</p>
-            <p>This is the</p>
+            
           </body>
           <footer className='App-footer'>
             <p>2023 Code Generator - Haydon Uresti</p>
