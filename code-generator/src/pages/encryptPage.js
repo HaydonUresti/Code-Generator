@@ -1,16 +1,12 @@
 import React from "react";
 import encryptString from  '../components/cypher'
-// import { exportItems } from "../components/cypher";
 import { useState } from "react";
-// import encryptString from "../components/cypher";
-// import encryptString from "../components/cypher";
+
 // The home page of the website
 const EncryptPage = () => {
   const [unencryptedInput, setUnencryptedInput] = useState("");
   const [code, setCode] = useState("");
-  // let encodedString = exportItems.encryptString(code)
-  // let encodedString = encryptString(code)
-  // let outputCode = ''
+
 
   return (
         <div className="App">
@@ -35,15 +31,21 @@ const EncryptPage = () => {
               
             </form>
            <button onClick={ () => setCode(encryptString(unencryptedInput))}>
-           {/* <button onClick={ console.log(unencryptedInput)}> */}
             Encrypt your message
            </button>
            <p>{code}</p>
           </div>
           <footer className='App-footer'>
-            <p>2023 Code Generator - Haydon Uresti</p>
+            <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>
             <div>
-              {/* A git hub link can go here */}
+              <a className="youTube-Icon" href="">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/64px-YouTube_icon_%282013-2017%29.png"/>
+              </a>
+              <a className='Git-icon' href="https://github.com/HaydonUresti">
+                <img alt="Git Hub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Font_Awesome_5_brands_github-square.svg/64px-Font_Awesome_5_brands_github-square.svg.png"/>
+              </a>
+              {/* Enter the Youtube link here when its finished */}
+              
             </div>
           </footer>
         </div>

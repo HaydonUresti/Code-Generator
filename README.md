@@ -34,3 +34,12 @@
 - Item 1
 - Item 2
 - Item 3
+
+# Image Attribution
+
+-GitHub icon
+
+    Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+
+-YouTube icon
+YouTube, Public domain, via Wikimedia Commons

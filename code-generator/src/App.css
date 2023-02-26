@@ -28,7 +28,23 @@
   /* padding: 14px 16px; */
   
 }
+.Git-icon {
+  display: inline-block;
+  align-items: flex-end;
+  /* margin-right: 20px; */
+  /* margin-right: 20; */
+}
 
+.youTube-Icon {
+  margin: 10px;
+  /* margin-bottom: 15px; */
+}
+
+.footer-text {
+  margin-left: 20px;
+  text-align: left;
+  margin-top: 25px;
+}
 .App-link {
   margin-left: 20px;
   color: #61dafb;
@@ -52,7 +68,9 @@
 }
 
 .App-footer {
-  min-height: 7vh;;
+  min-height: 7vh;
+  display: flex;
+  justify-content: space-between;
 }
 /* .App-link {
   color: #61dafb;

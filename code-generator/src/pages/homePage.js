@@ -11,37 +11,21 @@ const HomePage = () => {
               <a className='App-link' href='/decrypt'>Decrypt a Code</a>
             </header>
     
-          
-          {/* <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <p>
-              Adding a paragraph
-            
-            </p>
-            <button className="App-body">A button</button>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </header> */}
-          <body className='App-body'>
+          <div className='App-body'>
             <p>This is the home page</p>
             
-          </body>
+          </div>
           <footer className='App-footer'>
-            <p>2023 Code Generator - Haydon Uresti</p>
+            <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>
             <div>
-              {/* A git hub link can go here */}
-              <a href="https://github.com/HaydonUresti">
-                <img alt="Git Hub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Font_Awesome_5_brands_github-square.svg/32px-Font_Awesome_5_brands_github-square.svg.png"/>
+              <a className="youTube-Icon" href="">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/64px-YouTube_icon_%282013-2017%29.png"/>
               </a>
+              <a className='Git-icon' href="https://github.com/HaydonUresti">
+                <img alt="Git Hub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Font_Awesome_5_brands_github-square.svg/64px-Font_Awesome_5_brands_github-square.svg.png"/>
+              </a>
+              {/* Enter the Youtube link here when its finished */}
+              
             </div>
           </footer>
         </div>
