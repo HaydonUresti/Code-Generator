@@ -13,7 +13,7 @@ const decryptString = (encryptedString) => {
     let currChar = chars.indexOf(newString[i])
     console.log("Original char: ",currChar)
     
-    if (currChar == 39) {
+    if (currChar === 62) {
         decryptedArray.push(" ")
         continue;
     }

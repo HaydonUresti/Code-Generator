@@ -46,11 +46,24 @@
   margin-top: 25px;
 }
 .App-link {
+  padding:5px;
   margin-left: 20px;
-  color: #61dafb;
+  color: #617dfb;
+  /* border-color: blue; */
+  
+  /* margin-bottom: 5px; */
+}
+a:hover{
+  color: blue;
+  text-transform: uppercase;
+  text-decoration:underline;
+  text-decoration: overline;
+  
 }
 
-/* body { min-height: 100vh; } */
+/* a:visited {
+  color: dimgray;
+} */
 
 .App-body {
   background-color: #262e3d;

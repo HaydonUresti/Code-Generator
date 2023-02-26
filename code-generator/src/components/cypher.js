@@ -13,8 +13,9 @@ const encryptString = (unencryptedString) => {
     
     // console.log("len: ", chars.length)
    
-    if (unencryptedString[i] == ' '){
-        currChar = 62;
+    if (unencryptedString[i] === ' '){
+        newArray.push('+')
+        continue;
     }
     console.log(currChar)
     if (currChar+key > 62) {
