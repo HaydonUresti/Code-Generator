@@ -39,6 +39,9 @@ const HomePage = () => {
             <p>2023 Code Generator - Haydon Uresti</p>
             <div>
               {/* A git hub link can go here */}
+              <a href="https://github.com/HaydonUresti">
+                <img alt="Git Hub" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Font_Awesome_5_brands_github-square.svg/32px-Font_Awesome_5_brands_github-square.svg.png"/>
+              </a>
             </div>
           </footer>
         </div>
