@@ -17,8 +17,11 @@
 # Development Environment
 
 {Describe the tools that you used to develop the software}
+Code Generator was written using Visual Studio Code.
 
 {Describe the programming language that you used and any libraries.}
+It was written in JavaScript using React JS.
+The library react-router-dom was also used to handle routing between pages.
 
 # Useful Websites
 

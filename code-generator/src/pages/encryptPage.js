@@ -2,12 +2,14 @@ import React from "react";
 import encryptString from  '../components/cypher'
 import { useState } from "react";
 
-// The home page of the website
+// The page that allows the user to encrypt a string.
 const EncryptPage = () => {
+
+  // State to sove temparary memory of the input and output strings.
   const [unencryptedInput, setUnencryptedInput] = useState("");
   const [code, setCode] = useState("");
 
-
+  // Returning the html elements that make up the website
   return (
         <div className="App">
           
@@ -17,10 +19,12 @@ const EncryptPage = () => {
               <a className='App-link' href='/decrypt'>Decrypt a Code</a>
             </header>
     
-          <div className='App-body'>
+          <div className='home-grid'>
+            <div>
             <p>Welcome to the encoder! To begin simply enter the text you want encoded into the entry box.</p>
             <p>Special characters and punctuation may not be included.</p>
-            <form>
+            </div>
+            <form className="input-form">
               <label>Enter the string you would like encoded:  
                 <input 
                 type="text"
@@ -30,10 +34,13 @@ const EncryptPage = () => {
               </label>
               
             </form>
-           <button onClick={ () => setCode(encryptString(unencryptedInput))}>
+           <button className='encrypt-button' onClick={ () => setCode(encryptString(unencryptedInput))}>
             Encrypt your message
            </button>
+           <div className="output">
+            <h5>Your encoded message:</h5>
            <p>{code}</p>
+           </div>
           </div>
           <footer className='App-footer'>
             <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>

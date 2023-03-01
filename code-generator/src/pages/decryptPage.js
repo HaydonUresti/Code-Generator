@@ -2,27 +2,28 @@ import React from "react";
 import { useState } from "react";
 import decryptString from "../components/decipher";
 
-// The home page of the website
+// The page that allows the user to decrypt a string.
 const DecryptPage = () => {
 
+  // State to sove temparary memory of the input and output strings.
   const [encryptedInput, setEncryptedInput] = useState("");
   const [plainText, setPlainText] = useState("");
   
-    return (
-      
-  
+    // Returning the html elements that make up the website
+    return (    
             <div className="App">
-              
                 <header className="App-header">
                   <p className="App-title">&lt;Code Generator&gt;</p>
                   <a className='App-link' href='/'>Return Home</a>
                   <a className='App-link' href='/encrypt'>Encrypt a Code</a>
                 </header>
         
-              <div className='App-body'>
+              <div className='home-grid'>
+                <div>
                 <p>Welcome to the Decoder! To begin simply enter the text you want decoded into the entry box.</p>
                 <p>Special characters and punctuation, besides "+", "/", and "=" may not be included.</p>
-                <form>
+                </div>
+                <form className="input-form">
                   <label>Enter the string you would like decoded:  
                     <input 
                     type="text"
@@ -30,12 +31,14 @@ const DecryptPage = () => {
                     onChange={(text) => setEncryptedInput(text.target.value)}
                     />
                   </label>
-                  
                 </form>
-               <button onClick={ () => setPlainText(decryptString(encryptedInput))}>
+               <button className="encrypt-button" onClick={ () => setPlainText(decryptString(encryptedInput))}>
                 Decrypt your message
                </button>
+               <div className="output">
+               <h5>Your decrypted message:</h5> 
                <p>{plainText}</p>
+               </div>
               </div>
               <footer className='App-footer'>
             <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>

@@ -2,18 +2,45 @@ import React from "react";
 
 // The home page of the website
 const HomePage = () => {
+
+  // Returning the html elements that make up the website
     return (
         <div className="App">
           
             <header className="App-header">
-              <p className="App-title">&lt;Code Generator&gt;</p>
-              <a className='App-link' href='/encrypt'>Generate a Code</a>
+              <div className="App-title">
+              <p className="App-title">&lt;Code-Generator&gt;</p>
+              <a className='App-link' href='/encrypt'>Encrypt a String</a>
               <a className='App-link' href='/decrypt'>Decrypt a Code</a>
+              </div>
             </header>
     
-          <div className='App-body'>
-            <p>This is the home page</p>
+          <div className='home-grid'>
+            <div class='about-position'>
+            <h2>About Code Generator</h2>
+            <p>Code generator is a web app that allows you to enter a string and have it encoded!
+              After your string is encoded, you can decode it as well! This allows you to create secret
+              messages for you and your friends!</p>
+              </div>
+              <div className="encode-postion">
+            <h3>To encode a message:</h3>
+            <p>In order to encode a string, go to the 'Encrypt a String' page. Once there, enter your 
+              string into the text input box. After that simply cick the 'Encrypt your message' button.
+              Your encrypted message will appear bellow.
+            </p>
+            </div>
+            <div className="decode-postion">
+            <h3>To decode a message:</h3>
+            <p>
+              To decode a message, go to the 'Decrypt a Message' page. Next, enter a string into the text
+              input box. Finally, click the 'Decrypt your message' button and your decrypted messgae will 
+              appear bellow.
+              Note that the decoder is designed to decode messages encoded in Code-Generator, and will likely
+              note help to decode messages encoded elsewhere.
+            </p>
+            </div>
             
+
           </div>
           <footer className='App-footer'>
             <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>
@@ -34,3 +61,4 @@ const HomePage = () => {
 
 
 export default HomePage;
+// Maybe change the theme based on the time of day?
