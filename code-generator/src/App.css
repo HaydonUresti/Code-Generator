@@ -1,51 +1,20 @@
  .App {
   text-align: center;
+  height: 100%;
 }
 
+/* styles for the heading */
 .App-title {
   font-weight: 700;
-}
-
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-} */
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   min-height: 7vh;
   justify-content: left;
   justify-items: left;
-  /* float: left; */
   text-align: left;
-  /* padding: 14px 16px; */
-  /* overflow: hidden; */
-  /* padding-bottom: 18px; */
-  
-}
-.Git-icon {
-  display: inline-block;
-  align-items: flex-end;
 }
 
-.youTube-Icon {
-  margin:1rem
-}
-
-.footer-text {
-  margin-left: 1rem;
-  text-align: left;
-  margin-top: 1.5rem;
-  font-size: large;
-  font-style: italic;
-}
 .App-link {
   padding:5px;
   margin-left: 20px;
@@ -60,34 +29,12 @@ a:hover{
   
 }
 
-
-.App-body {
-  background-color: #262e3d;
-  width: "100%";
-  min-height: 20vh;
-  margin: auto;
-  /* height: 100px;  */
-  /* line-height: 100px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center;*/
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin);*/
-  color: white; 
-}
-
-.App-footer {
-  min-height:fit-content;
-  display: flex;
-  justify-content: space-between;
-}
-
+/* Styles for the body */
 
 .home-grid {
   background-color: #262e3d;
   width: "100%";
   min-height: 50vh;
-  /* max-height:100em; */
   margin: auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -95,6 +42,10 @@ a:hover{
   color: white;
   align-items: center;
   justify-items: center;
+}
+
+.info {
+  margin-top: 2em;
 }
 
 .about-position {
@@ -112,11 +63,48 @@ a:hover{
   grid-row: 2 / 4;
 }
 
+.encrypt-button {
+  width: 100px;
+  align-self: center;
+  
+}
+
+
+/* Styles for the footer */
+.App-footer {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Git-icon {
+  display: inline-block;
+  align-items: flex-end;
+}
+
+.youTube-Icon {
+  margin:1rem
+}
+
+.footer-text {
+  margin-left: 1rem;
+  text-align: left;
+  margin-top: 1.5rem;
+  font-size: large;
+  font-style: italic;
+}
+
+/* Styles for different screen sizes */
 @media (max-width: 800px) {
+  .App-header {
+    height: 20%;
+  }
+  
   .home-grid {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    height: 50%;
   }
 
   .input-form {
@@ -127,20 +115,11 @@ a:hover{
     width: 80px;  
     margin-top: -40%;
   }
-
-  
-}
-
-.encrypt-button {
-  width: 100px;
-  align-self: center;
-  /* margin-top: -30%; */
-}
-
-.output {
-  /* margin-top: -25%; */
-}
-
-.input-form {
-  /* margin-top: -10%; */
+  .info {
+    margin-top: 4em ;
+  }
+  .App-footer {
+    
+    height: 30%;
+  }
 }

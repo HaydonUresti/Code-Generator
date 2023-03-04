@@ -8,7 +8,7 @@ import DecryptPage from './pages/decryptPage';
 
 function App() {
 
-  // returns the html conponents of the web app
+  // returns the html components of the web app
   return (
     <div>
     <Router>

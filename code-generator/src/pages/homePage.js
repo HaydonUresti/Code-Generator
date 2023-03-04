@@ -1,5 +1,20 @@
 import React from "react";
 
+import Counter from "../components/Counter";
+
+// Creating the counter object and setting the value of the current count (currCount) 
+let count = new Counter('homeCounter')
+count.addTo('homeCounter') 
+// The + 1 is to account for the initial visit to the website
+let currCount = count.reportCount() + 1 
+
+// Changing the visitPhrase based on the number of times the user has visited the page 
+var visitPhrase = 'You have started this app ' + currCount + ' times now!';
+if (currCount===1){
+  var visitPhrase = 'You have started the this app 1 time!';
+} 
+
+
 // The home page of the website
 const HomePage = () => {
 
@@ -17,7 +32,8 @@ const HomePage = () => {
     
           <div className='home-grid'>
             <div class='about-position'>
-            <h2>About Code Generator</h2>
+              <h5>{visitPhrase}</h5>
+            <h2>About Code Generator</h2> 
             <p>Code generator is a web app that allows you to enter a string and have it encoded!
               After your string is encoded, you can decode it as well! This allows you to create secret
               messages for you and your friends!</p>

@@ -1,13 +1,23 @@
 import React from "react";
 import encryptString from  '../components/cypher'
 import { useState } from "react";
+import Counter from "../components/Counter";
 
 // The page that allows the user to encrypt a string.
 const EncryptPage = () => {
 
-  // State to sove temparary memory of the input and output strings.
+  // Creating the counter object and setting the value of the current count (currCount) 
+let encryptCounter = new Counter('encodeCounter');
+let currCount = encryptCounter.reportCount();
+
+// subtracting 1 from the home counter in local storage so that 1 is not added to home counter when this file is called.
+let homeCounter = new Counter('homeCounter');
+homeCounter.subtractFrom('homeCounter')
+
+// State to sove temparary memory of the input and output strings.
   const [unencryptedInput, setUnencryptedInput] = useState("");
   const [code, setCode] = useState("");
+
 
   // Returning the html elements that make up the website
   return (
@@ -20,7 +30,8 @@ const EncryptPage = () => {
             </header>
     
           <div className='home-grid'>
-            <div>
+            <div className="info">
+            <h5>You have encoded {currCount} strings!</h5>
             <p>Welcome to the encoder! To begin simply enter the text you want encoded into the entry box.</p>
             <p>Special characters and punctuation may not be included.</p>
             </div>
@@ -34,7 +45,7 @@ const EncryptPage = () => {
               </label>
               
             </form>
-           <button className='encrypt-button' onClick={ () => setCode(encryptString(unencryptedInput))}>
+           <button className='encrypt-button' onClick={ () => [setCode(encryptString(unencryptedInput)), encryptCounter.addTo('encodeCounter')]}>
             Encrypt your message
            </button>
            <div className="output">

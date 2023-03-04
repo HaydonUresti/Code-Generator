@@ -1,18 +1,26 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+Code-Generator is a web app that allows a user to encode a given string and decode strings based on the app's encoding.
 
-{Provide a description the web app that you wrote. Describe how to start a test server on your computer and what website to open up to see the first page of the app.}
+After the repository is cloned, install the necessary libraries by entering the following lines into the terminal:
 
-{Describe your purpose for writing this software.}
+- npm install
+- npm i react
+- npm i react-router-dom
+
+After that, start a test server by running: npm start.
+Code-Generator will then open up in your web browser.
+
+Code-Generator is a web app project I created to help me practice JavaScript skills as well as learn React JS.
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Code-Generator: Demo](http://youtube.link.goes.here)
 
 # Web Pages
 
 {Describe each of the web pages you created and how the web app transitions between each of them. Also describe what is dynamically created on each page.}
+Code-Generator consists of 3 web pages, a home/about page, an encrypt page, and a decrypt page.
 
 # Development Environment
 
