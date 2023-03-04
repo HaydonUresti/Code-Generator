@@ -19,6 +19,9 @@ reportCount(){
     return this.count
 }
 
+// A method that takes 1 from the current value of the selected page's value.
+// Parameters: pageCounter - The value for the selected page. 
+// Returns: None
 subtractFrom(pageCounter) {
     localStorage.setItem(pageCounter, this.count-1)
 }

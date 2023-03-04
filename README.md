@@ -19,38 +19,31 @@ Code-Generator is a web app project I created to help me practice JavaScript ski
 
 # Web Pages
 
-{Describe each of the web pages you created and how the web app transitions between each of them. Also describe what is dynamically created on each page.}
-Code-Generator consists of 3 web pages, a home/about page, an encrypt page, and a decrypt page.
+Code-Generator consists of 3 web pages, a home/about page, an encrypt page, and a decrypt page. The app uses the react-router library to transition between pages. Each page is dynamic and will change layout depending on the size of the screen. They are also dynamic in that they each display a value unique to the client. The home page will display the number of time that user has started Code-Generator. The encrypt and decrypt pages show the user how many times they have encrypted or decrypted a string respectively.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
 Code Generator was written using Visual Studio Code.
 
-{Describe the programming language that you used and any libraries.}
 It was written in JavaScript using React JS.
 The library react-router-dom was also used to handle routing between pages.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [W3 Schools](https://www.w3schools.com/js/js_classes.asp)
+- [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- In future updates, I would like to improve string encoding, to make it more difficult to be solved
+- Include more kinds of encoding, giving the user the option to choose what level of encoding is used
+- Improve the web pages visually
 
 # Image Attribution
 
 -GitHub icon
 
-    Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+- Font Awesome Free 5.4.1 by @fontawesome - https://fontawesome.com, CC BY 4.0 https://creativecommons.org/licenses/by/4.0, via Wikimedia Commons
 
--YouTube icon
-YouTube, Public domain, via Wikimedia Commons
+- YouTube icon
+  YouTube, Public domain, via Wikimedia Commons
