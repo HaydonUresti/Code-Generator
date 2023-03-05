@@ -13,8 +13,6 @@ Code-Generator will then open up in your web browser.
 
 Code-Generator is a web app project I created to help me practice JavaScript skills as well as learn React JS.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
-
 [Code-Generator: Demo](https://youtu.be/QbtZFJWGXnw)
 
 # Web Pages
