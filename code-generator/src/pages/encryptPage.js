@@ -56,7 +56,7 @@ homeCounter.subtractFrom('homeCounter')
           <footer className='App-footer'>
             <p className="footer-text" >2023 Code Generator - Haydon Uresti</p>
             <div>
-              <a className="youTube-Icon" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+              <a className="youTube-Icon" href="https://youtu.be/QbtZFJWGXnw">
               <img alt="Youtube" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/64px-YouTube_icon_%282013-2017%29.png"/>
               </a>
               <a className='Git-icon' href="https://github.com/HaydonUresti">
